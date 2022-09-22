@@ -1,4 +1,4 @@
-{% set version = '1.5.1' %}
+{% set version = "1.5.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sen2r_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sen2r/sen2r_{{ version }}.tar.gz
-  sha256: 55092b13b14eb37e62c78e315e82609aa34e138d743a7b611e63a117be751b8f
+  sha256: f3c354c79e74edae681b499f0ac7e912cca114c7a988140a3753c46c229ab9be
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -61,14 +61,11 @@ test:
 about:
   home: https://sen2r.ranghetti.info
   license: GPL-3.0-only
-  summary: 'Functions to download Sentinel-2 optical images and perform preliminary processing
-    operations. ''sen2r'' provides the instruments required to easily perform (and eventually
-    automate) the steps necessary to build a complete Sentinel-2 processing chain. A
-    Graphical User Interface to facilitate data processing is also provided. For additional
-    documentation refer to the following article: Ranghetti et al. (2020) <doi:10.1016/j.cageo.2020.104473>.'
+  summary: "Functions to download Sentinel-2 optical images and perform preliminary processing operations. 'sen2r' provides the instruments required to easily perform (and eventually automate) the steps necessary to build a complete Sentinel-2 processing chain. A Graphical User Interface to facilitate data processing is\
+    \ also provided. For additional documentation refer to the following article: Ranghetti et al. (2020) <doi:10.1016/j.cageo.2020.104473>."
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
