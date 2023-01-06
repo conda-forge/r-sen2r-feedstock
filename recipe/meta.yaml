@@ -1,4 +1,4 @@
-{% set version = "1.5.3" %}
+{% set version = "1.5.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sen2r_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sen2r/sen2r_{{ version }}.tar.gz
-  sha256: f3c354c79e74edae681b499f0ac7e912cca114c7a988140a3753c46c229ab9be
+  sha256: 78873b3bdf3bfcd392428f45322bf55e0929846136b395733d98e1f0a5532276
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
