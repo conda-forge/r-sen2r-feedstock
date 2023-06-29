@@ -1,11 +1,11 @@
-About r-sen2r
-=============
+About r-sen2r-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-sen2r-feedstock/blob/main/LICENSE.txt)
 
 Home: https://sen2r.ranghetti.info
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-sen2r-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions to download Sentinel-2 optical images and perform preliminary processing operations. 'sen2r' provides the instruments required to easily perform (and eventually automate) the steps necessary to build a complete Sentinel-2 processing chain. A Graphical User Interface to facilitate data processing is also provided. For additional documentation refer to the following article: Ranghetti et al. (2020) <doi:10.1016/j.cageo.2020.104473>.
 
